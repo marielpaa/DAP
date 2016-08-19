@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Solicitud de empleo</title>
+	
+		<style>
+
+			h1{
+				font-family: georgia; 
+				font-size: 30pt
+			}
+
+			h3{
+				font-family: georgia;
+			}
+
+			table {
+			    border-style: solid;
+    			border-width: 5px;
+			}
+
+			button {
+ 			  	background-color: #4CAF50;
+				border: none;
+		    	color: white;
+				padding: 15px 32px;
+			    text-align: center;
+			    text-decoration: none;
+			    display: inline-block;
+			    font-size: 16px;
+			    margin: 4px 2px;
+			    cursor: pointer;
+			}
+
+			input[type=text], select {
+			    width: 100%;
+			    padding: 12px 20px;
+			    margin: 8px 0;
+			    display: inline-block;
+			    border: 1px solid #ccc;
+			    border-radius: 4px;
+			    box-sizing: border-box;
+			}
+			input[type=submit] {
+			    width: 100%;
+			    background-color: #4CAF50;
+			    color: white;
+			    padding: 14px 20px;
+			    margin: 8px 0;
+			    border: none;
+			    border-radius: 4px;
+			    cursor: pointer;
+			}
+
+			input[type=submit]:hover {
+			    background-color: #45a049;
+			}
+
+			div {
+			    border-radius: 5px;
+			    background-color: #f2f2f2;
+			    padding: 20px;
+			}
+		</style>
+	</head>
+
+	<body>
+	<p>
+
+		<table> 
+				<tr>
+					<td align="center" colspan="4"><h1>Solicitud de empleo</h1></td>
+					<td align="center" colspan="2"><label><h3>Fecha: <input name="fecha" type="date" size="20"></h3></label></br></td>
+					<td rowspan="3" align="center" bgcolor="lightgray">Inserte su foto aqui</td>
+				</tr>
+				<tr>
+					<td align="center" rowspan="2" colspan="4">Nota: la informacion aqui proporcionada <br> sera tratada confidencialmente</td>
+					<td colspan="2"><label>Puesto que solicita y turno de su interes: <input type="text" name="pyt" size="20"></label></br></td>
+
+				</tr>
+				<tr>
+					<td align="center" colspan="2"><label>Sueldo: <input type="text" name="sueldo" size="10"></label></td>
+				</tr>
+
+				<tr>
+					<td align="center" colspan="7" bgcolor="lightgray"><h3>Datos personales</h3></td>
+				</tr>
+				<tr>
+					<td align="center"><label>Apellido paterno: <br><input type="text" name="aPaterno" size="20"></label></td>
+					<td align="center"><label>Apellido materno: <br><input type="text" name="aMaterno" size="20"></label></td>
+					<td align="center"><label>Nombres: <br><input type="text" name="nombres" size="20"></label></td>
+					<td align="center"><label>Edad: <br><input type="text" name="edad" size="5"></label></td>
+					<td align="center"><label>Estatura: <br><input type="text" name="aPaterno" size="5"></label></td>
+					<td align="center"><label>Peso: <br><input type="text" name="nombres" size="5"></label></td>
+					<td align="center">
+						Estado civil <br>
+						<input type="radio" name="edoCivil" value="1" checked>Soltero <!-- 1 true(yes) 0 false(no)-->
+						<input type="radio" name="edoCivil" value="0">Casado <!-- "checked" sale marcado por default(Es opcional)-->
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3"><label>Direccion: <br><input type="text" name="direccion" size="60"></label></td>
+					<td><label>Codigo Postal: <br><input type="text" name="nombres" size="5"></label></td>
+					<td colspan="2"><label>Telefono: <br><input type="text" name="edad" size="15"></label></td>
+					<td align="center">
+						Sexo <br>
+						<input type="radio" name="sexo" value="1" checked>F <!-- 1 true(yes) 0 false(no)-->
+						<input type="radio" name="sexo" value="0">M <!-- "checked" sale marcado por default(Es opcional)-->
+					</td>
+				</tr>
+				<tr>
+					<td><label>Fecha de nacimiento: <br><input type="text" name="fNacimiento"></label></td>
+					<td><label>Lugar de nacimiento: <br><input type="text" name="lNacimiento"></label></td>
+					<td><label>Nacionalidad: <br><input type="text" name="nacionalidad"></label></td>
+					<td align="center" colspan="4">
+						Vive con: <br>
+						<input type="radio" name="viveCon" value="1" checked>Sus padres <!-- 1 true(yes) 0 false(no)-->
+						<input type="radio" name="viveCon" value="0">Su familia <!-- "checked" sale marcado por default(Es opcional)-->
+						<input type="radio" name="viveCon" value="0">Solo
+					</td>
+				</tr>
+				<tr>
+					<td><label>Clave ISSEMYM: <br><input type="text" name="clave" size="20"></label></td>
+					<td align="center" colspan="2"><label>Correo electronico: <br><input type="text" name="correo" size="40"></label></td>
+					<td align="center" colspan="2"><label>Tiene licencia de manejo? <br><input type="text" name="licencia" size="20"></label></td>
+					<td align="center" colspan="2"><label>Registro federal de contribuyentes: <br><input type="text" name="edad" size="20"></label></td>
+				</tr>
+				<tr>
+					<td align="center" colspan="3">
+						Como considera su edo de salud actual?: <br>
+						<input type="radio" name="salud" value="1" checked>Bueno <!-- 1 true(yes) 0 false(no)-->
+						<input type="radio" name="salud" value="0">Regular <!-- "checked" sale marcado por default(Es opcional)-->
+						<input type="radio" name="salud" value="0">Malo
+					</td>
+					<td align="center" colspan="4">
+						Padece alguna enfermedad cronica?: <br>
+						<input type="radio" name="salud" value="1" checked>Si <!-- 1 true(yes) 0 false(no)-->
+						<input type="radio" name="salud" value="0">No <!-- "checked" sale marcado por default(Es opcional)-->
+						<input type="radio" name="salud" value="0">Cual?<input type="text" name="enfermedad">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2"><label>Que deporte practica? <br><input type="text" name="deporte" size="40"></label></td>
+					<td colspan="5"><label>Pertenece a algun club social o deportivo?<br><input type="text" name="clubSocial" size="70"></label></td>
+				</tr>
+				<tr>
+					<td colspan="7"><label>Cual es su meta en la vida?<br><input type="text" name="metaEnLaVida" size="115"></label></td>
+				</tr>
+
+				<tr>
+					<td align="center" colspan="7" bgcolor="lightgray"><h3>Datos familiares</h3></td>
+				</tr>
+				<tr>
+					<td align="center" colspan="2">Nombre</td>
+					<td align="center">Vive</td>
+					<td align="center">Finado</td>
+					<td align="center" colspan="2">Domicilio</td>
+					<td align="center">Ocupacion</td>
+				</tr>
+				<tr>
+					<td colspan="2">Padre<input type="text" name="name"></td>
+					<td align="center">
+						<input type="radio" name="pSalud" value="1" checked>Si <!-- 1 true(yes) 0 false(no)-->
+						<input type="radio" name="pSalud" value="0">No <!-- "checked" sale marcado por default(Es opcional)-->
+					</td>
+					<td align="center"><input type="text" name="finado" size="5"></td>
+					<td align="center" colspan="2"><input type="text" name="dom"></td>
+					<td align="center"><input type="text" name="ocu"></td>
+				</tr>
+				<tr>
+					<td colspan="2">Madre<input type="text" name="name"></td>
+					<td align="center">
+						<input type="radio" name="mSalud" value="1" checked>Si <!-- 1 true(yes) 0 false(no)-->
+						<input type="radio" name="mSalud" value="0">No <!-- "checked" sale marcado por default(Es opcional)-->
+					</td>
+					<td align="center"><input type="text" name="finado" size="5"></td>
+					<td align="center" colspan="2"><input type="text" name="dom"></td>
+					<td align="center"><input type="text" name="ocu"></td>
+				</tr>
+				<tr>
+					<td colspan="2">Esposa(o)<input type="text" name="name"></td>
+					<td align="center">
+						<input type="radio" name="eSalud" value="1" checked>Si <!-- 1 true(yes) 0 false(no)-->
+						<input type="radio" name="eSalud" value="0">No <!-- "checked" sale marcado por default(Es opcional)-->
+					</td>
+					<td align="center"><input type="text" name="finado" size="5"></td>
+					<td align="center" colspan="2"><input type="text" name="dom"></td>
+					<td align="center"><input type="text" name="ocu"></td>
+				</tr>
+				<tr>
+					<td colspan="2">Nombre Hija(o)<input type="text" name="name"></td>
+					<td align="center">
+						<input type="radio" name="hSalud" value="1" checked>Si <!-- 1 true(yes) 0 false(no)-->
+						<input type="radio" name="hSalud" value="0">No <!-- "checked" sale marcado por default(Es opcional)-->
+					</td>
+					<td align="center"><input type="text" name="finado" size="5"></td>
+					<td align="center" colspan="2"><input type="text" name="dom"></td>
+					<td align="center"><input type="text" name="ocu"></td>
+				</tr>
+		</table>
+		<button class="button">Enviar solicitud</button>
+	</p>
+	</body>
+</html>
