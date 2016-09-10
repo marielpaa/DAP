@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>IMC</title>
+	<script>
+
+	var imc;
+	var e; //estatura convertida a entero
+	var p; //peso convertido a entero
+
+	solicitarDatos();
+	imc = calcularIMC(e, p);
+	mostrarResultado(clasificarIMC(imc));
+
+	function solicitarDatos(){
+		estatura = window.prompt("Escriba su estatura: ", "");   //despliega una ventana pidiendo la estatura
+		e=parseInt(estatura);     								 // cambia la variabla a entera
+		peso = window.prompt("Escriba su peso: ", "");			 // despliega una ventana pidiendo el peso
+		p=parseInt(peso);										 // cambia la variable a neera
+	}
+
+	function calcularIMC(e, p){
+		return (peso/Math.pow(estatura,2));  //  regresa el valor del IMC peso sobre estatura^2 
+	}
+
+	function clasificarIMC(imc){     //clasifica en que rango se encuentra el IMC 
+		var resultado;
+
+		if(imc < 18)
+			resultado = "Bajo peso";
+		else if (imc >= 18 && imc < 25)
+			resultado = "Normal";
+		else if (imc >= 25 && imc < 27)
+			resultado = "Sobrepeso";
+		else if (imc >= 27 && imc < 30)
+			resultado = "Obesidad";	
+		else 
+			resultado = "Obesidad extrema";
+
+		return resultado;
+	} 
+
+	function mostrarResultado(resultado){       //recibe como parametro lo q guarda clasificar y despliega el resultado
+		document.writeln("Su IMC es: " + resultado);
+	}
+	
+
+	</script>
+	</head>
+	</html>
